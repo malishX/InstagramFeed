@@ -1,6 +1,7 @@
 import Foundation
+import UIKit
 
-class DataService {
+final class DataService: DataServiceProtocol {  // Add ": DataServiceProtocol"
     static let shared = DataService()
     
     private init() {}
@@ -23,7 +24,7 @@ class DataService {
         }
     }
     
-    func loadImage(named: String) -> UIImage? {
+    func loadImage(named: String) -> UIImage? {  // Correct spelling
         return UIImage(named: named)
     }
 }

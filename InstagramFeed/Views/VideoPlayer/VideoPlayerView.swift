@@ -1,16 +1,14 @@
 import SwiftUI
-import AVKit
 
 struct VideoPlayerView: UIViewRepresentable {
     let videoName: String
     @Binding var isPlaying: Bool
     
-    func makeUIView(context: Context) -> UIView {
-        PlayerUIView(frame: .zero, videoName: videoName, isPlaying: $isPlaying)
+    func makeUIView(context: Context) -> PlayerUIView {
+        PlayerUIView(frame: .zero, videoName: videoName)
     }
     
-    func updateUIView(_ uiView: UIView, context: Context) {
-        guard let playerUIView = uiView as? PlayerUIView else { return }
-        isPlaying ? playerUIView.play() : playerUIView.pause()
+    func updateUIView(_ uiView: PlayerUIView, context: Context) {
+        isPlaying ? uiView.play() : uiView.pause()
     }
 }
