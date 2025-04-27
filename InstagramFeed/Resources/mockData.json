@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "user": {
+            "id": "user1",
+            "username": "travel_enthusiast",
+            "profileImageUrl": "person.circle"
+        },
+        "caption": "Beautiful sunset at the beach today! 🌅 #sunset #beach",
+        "media": [
+            {
+                "id": "media1",
+                "type": "image",
+                "url": "sunset",
+                "width": 1080,
+                "height": 1350
+            }
+        ],
+        "likes": 243,
+        "timestamp": "2023-06-15T18:30:00Z"
+    },
+    {
+        "id": "2",
+        "user": {
+            "id": "user2",
+            "username": "food_lover",
+            "profileImageUrl": "person.circle"
+        },
+        "caption": "Homemade pasta for dinner tonight! 🍝 #foodie #homecooking",
+        "media": [
+            {
+                "id": "media2",
+                "type": "video",
+                "url": "pasta",
+                "width": 1080,
+                "height": 1920
+            }
+        ],
+        "likes": 156,
+        "timestamp": "2023-06-14T20:15:00Z"
+    },
+    {
+        "id": "3",
+        "user": {
+            "id": "user3",
+            "username": "fitness_guru",
+            "profileImageUrl": "person.circle"
+        },
+        "caption": "Morning workout complete! 💪 #fitness #workout",
+        "media": [
+            {
+                "id": "media3",
+                "type": "image",
+                "url": "workout",
+                "width": 1080,
+                "height": 1080
+            }
+        ],
+        "likes": 89,
+        "timestamp": "2023-06-14T07:45:00Z"
+    }
+]
